@@ -16,7 +16,7 @@ namespace Haley.Utils {
 
         const string DBASTRING = "AdapterStrings";
         const string CONFIG_DEFADAPTER = "defadapter";
-        const string DBNAME_KEY = "database";
+        public const string DBNAME_KEY = "database";
         const string DBTYPE_KEY = "dbtype";
         const string SEARCHPATH_KEY = "searchpath";
 
