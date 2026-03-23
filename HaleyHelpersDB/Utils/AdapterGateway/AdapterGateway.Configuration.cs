@@ -71,7 +71,7 @@ namespace Haley.Utils {
                 }
 
                 //After we finish loading everything, check if we have any default adapter or not.
-                var defAdapter = ResourceUtils.FetchVariable(root, CONFIG_DEFADAPTER);
+                var defAdapter = ResourceUtils.FetchVariableWith(root, CONFIG_DEFADAPTER);
                 if (!string.IsNullOrWhiteSpace(defAdapter?.Result?.ToString())) _defaultAdapterKey = defAdapter?.Result?.ToString();
             } catch (Exception) {
                 throw;
