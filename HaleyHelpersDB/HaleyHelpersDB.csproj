@@ -61,6 +61,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="11.0.0" />
     <PackageReference Include="MySqlConnector" Version="3.0.0" />
     <PackageReference Include="Npgsql" Version="10.0.3" />
+    <!-- DiagnosticSource 11 falls back to a netstandard asset on net8.0 whose init setter is incompatible with Npgsql metrics. -->
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="10.0.15" />
   </ItemGroup>
   <Choose>
     <When Condition="Exists('$(HaleyAbstractionsCoreProj)')">
